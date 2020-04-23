@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "130714b3-c373-42db-b52c-b5e4b3240ee0",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/GetApi/User?id=6",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"GetApi",
+						"User"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/GetApi/User?name=Maulik2&address=San Antonio",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"GetApi",
+						"User"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Maulik2"
+						},
+						{
+							"key": "address",
+							"value": "San Antonio"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/GetApi/User/list",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"GetApi",
+						"User",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Using Path  Variable (URL)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/GetApi/User/6",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"GetApi",
+						"User",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
